@@ -14,7 +14,7 @@
     <before css:content="head link" css:theme="head link" />    
     <replace css:content="head title" css:theme="head title" />    
     <before css:content="head script" css:theme="head script" />
-    <copy css:content="head base" css:theme="head base" />    
+    <before css:theme-children="head" css:content="base" /> 
     
     <!--Content-->
     <merge attributes="class" css:content="body" css:theme="body" />
