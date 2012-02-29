@@ -8,13 +8,13 @@
 
     <!--Head-->
     <copy css:content="html" css:theme="html" attributes="lang dir" />
-    <before css:content="head meta" css:theme="head meta" />
     <drop css:content="head link[rel='shortcut icon']" />
     <drop css:content="head link[rel='apple-touch-icon']" />    
-    <before css:content="head link" css:theme="head link" />    
+    <before css:content="head link" css:theme="head link[rel='stylesheet']" />    
     <replace css:content="head title" css:theme="head title" />    
     <before css:content="head script" css:theme="head script" />
     <before css:theme-children="head" css:content="base" /> 
+    <after css:theme-children="head" css:content="head meta" />
     
     <!--Content-->
     <merge attributes="class" css:content="body" css:theme="body" />
